@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color:#777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(../images/concrete_seamless.png);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #fff;
+    float: right;
+}
+
+li {
+    float: right;
+    border-right:1px solid #cccccc;
+}
+
+li:first-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+li a:hover:not(.active) {
+    color: #4AB4DD;
+}
+
+.active {
+    color: #4aaaa5;
+}
+
+nav {
+    overflow: hidden;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    background-color: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-size: 2em; 
+    float: left;
+    margin: 0;
+}
+
+#name {
+    color: #fff;
+    background-color: #4aaaa5;
+    padding: 30px; 
+}
+
+#content {
+    max-width: 960px;
+    margin: 20px auto 50px;
+    background-color: #fff;
+    padding: 30px 30px 30px;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    min-height: calc(100vh - 215px);
+}
+
+#contentHeader {
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+}
+
+#contentTitle {
+    color: #4aaaa5;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+.portfolioImage {
+    _margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 5px 5px 10px 5px #888888, -5px -5px 10px 5px #888888, -5px 5px 10px 5px #888888, 5px -5px 10px 5px #888888 ;
+}
+
+#headshot {
+    margin-top: 20px;
+    height: 20%;
+    width: 20%;
+}
+
+div.image {
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+    float: left;
+    width: 40%;
+}
+
+div.form-container {
+    margin-top: 20px;
+}
+
+h3 {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+
+h3:hover {
+    background-color: #4AB4DD;
+}
+
+.image:hover h3 {
+    background-color: #4AB4DD;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    font-size:small;
+    text-align: center;
+    color:#cccccc;
+    margin-top: 20px;
+}
+
+#blueFooter {
+    background-color: #4AB4DD;
+    height: 50px; 
+    width: 100%;
+    position: relative;
+}
+
+#greyFooter {
+    background-color: #666;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0 15px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+    overflow: auto;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 2px solid #4AB4DD;
+}
+
+input[type=submit]:hover {
+    background-color: #4AB4DD;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        max-width: 90%;
+    }
+
+    #content {
+        max-width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        width: 100%;
+    }
+
+    #name {
+        text-align: center; 
+        padding: 20px;
+    }
+    
+    nav {
+        max-width: 100%;
+    }
+
+    ul {
+        padding: 20px 0;
+    }
+
+    #content {
+        max-width: 90%;
+    }
+
+    img {
+        float: none;
+        margin-right: 20px;
+    }
+
+    #headshot {
+        width: 100%; 
+    }
+
+    div.image {
+        width: 100%;
+    }
+
+}
