@@ -19,11 +19,11 @@ ul {
 }
 
 li {
-    float: right;
+    float: left;
     border-right:1px solid #cccccc;
 }
 
-li:first-child {
+li:last-child {
     border-right: none;
 }
 
@@ -249,6 +249,16 @@ input[type=submit]:hover {
 
     ul {
         padding: 20px 0;
+        text-align: center;
+    }
+
+    li {
+        float: none;
+        display: inline;
+    }
+
+    li a {
+        display: inline-block;
     }
 
     #content {
