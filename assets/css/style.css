@@ -245,11 +245,14 @@ input[type=submit]:hover {
     
     nav {
         max-width: 100%;
+        text-align: center;
     }
 
     ul {
         padding: 20px 0;
         text-align: center;
+        display: inline-block;
+        float: none;
     }
 
     li {
