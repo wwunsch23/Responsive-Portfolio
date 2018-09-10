@@ -135,18 +135,22 @@ h3 {
     bottom: 10px;
     width: 100%;
     background-color: #4aaaa5;
+    transition: background-color 2s;
     padding: 15px;
     text-align: center;
     color: #fff;
     font-family: 'Georgia', Times, "Times New Roman", serif;
+    opacity: .75;
 }
 
 h3:hover {
     background-color: #4AB4DD;
+    opacity: 1;
 }
 
 .image:hover h3 {
     background-color: #4AB4DD;
+    opacity: 1;
 }
 
 footer {
